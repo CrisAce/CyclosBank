@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="OnlineBanking.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="TextValidationTestCase(failed)" parallel="none">
+    <classes>
+      <class name="OnlineBanking.HomePageTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialiseBrowser"/>
+        </methods>
+      </class> <!-- OnlineBanking.HomePageTestCase -->
+      <class name="OnlineBanking.LoginPageTestCase">
+        <methods>
+          <include name="lunchDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- OnlineBanking.LoginPageTestCase -->
+      <class name="OnlineBanking.TextValidationTestCase">
+        <methods>
+          <include name="lunchDriver"/>
+          <include name="tearDown"/>
+          <include name="checkTextValidation"/>
+        </methods>
+      </class> <!-- OnlineBanking.TextValidationTestCase -->
+      <class name="OnlineBanking.PageFooterValidationTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="lunchDriver"/>
+        </methods>
+      </class> <!-- OnlineBanking.PageFooterValidationTestCase -->
+    </classes>
+  </test> <!-- TextValidationTestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->

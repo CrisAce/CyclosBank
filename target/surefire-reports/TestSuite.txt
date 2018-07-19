@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.275 s <<< FAILURE! - in TestSuite
+checkTextValidation(OnlineBanking.TextValidationTestCase)  Time elapsed: 1.714 s  <<< FAILURE!
+java.lang.AssertionError: expected [Cyclos 4 Dem] but found [Cyclos 4 Demo]
+	at OnlineBanking.TextValidationTestCase.checkTextValidation(TextValidationTestCase.java:35)
+

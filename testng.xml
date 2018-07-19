@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+	<listeners>
+	<listener class-name="OnlineBanking.Listeners"></listener>
+	<listener class-name="resources.ExtentReporterNG"></listener>
+	</listeners>
+	<test name="LoginPageTestCase">
+		<classes>
+			<class name="OnlineBanking.LoginPageTestCase" />
+		</classes>
+	</test>
+	<test name="PageFooterValidationTestCase">
+		<classes>
+			<class name="OnlineBanking.PageFooterValidationTestCase" />
+		</classes>
+	</test>
+	<test name="TextValidationTestCase">
+		<classes>
+			<class name="OnlineBanking.TextValidationTestCase" />
+		</classes>
+	</test>
+	<test name="HomePageTestCase">
+		<classes>
+			<class name="OnlineBanking.HomePageTestCase" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
